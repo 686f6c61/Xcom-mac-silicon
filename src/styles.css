@@ -1,0 +1,83 @@
+/**
+ * X - Cliente no oficial de X (Twitter) para macOS
+ * Copyright © 2024 686f6c61
+ *
+ * Author: 686f6c61 (https://github.com/686f6c61)
+ * Repository: https://github.com/686f6c61/Xcom-mac-silicon
+ *
+ * Main stylesheet - Define estilos globales, barra de navegación, diálogo de ayuda,
+ * y estilos compatibles con el tema oscuro de X (Twitter).
+ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background: #000;
+  color: #fff;
+  overflow: hidden;
+}
+
+#app {
+  width: 100vw;
+  height: 100vh;
+}
+
+#twitter-frame {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.dialog {
+  background: #000;
+  color: #fff;
+  border: 1px solid #2f3336;
+  border-radius: 12px;
+  padding: 0;
+  max-width: 90vw;
+  max-height: 90vh;
+  width: 600px;
+}
+
+.dialog::backdrop {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.dialog-content {
+  position: relative;
+  height: 80vh;
+  overflow: hidden;
+}
+
+.close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: #16181c;
+  color: #fff;
+  border: 1px solid #2f3336;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.close-btn:hover {
+  background: #2f3336;
+}
+
+.help-frame {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
